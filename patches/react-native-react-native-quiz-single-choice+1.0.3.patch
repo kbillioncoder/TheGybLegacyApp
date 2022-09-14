@@ -1,0 +1,26 @@
+diff --git a/node_modules/react-native-react-native-quiz-single-choice/dist/lib/QuizeSingleChoice.js b/node_modules/react-native-react-native-quiz-single-choice/dist/lib/QuizeSingleChoice.js
+index e0d0e36..65f9d16 100644
+--- a/node_modules/react-native-react-native-quiz-single-choice/dist/lib/QuizeSingleChoice.js
++++ b/node_modules/react-native-react-native-quiz-single-choice/dist/lib/QuizeSingleChoice.js
+@@ -31,15 +31,20 @@ const QuizSingleChoice = ({ containerStyle, questionTitleStyle, responseStyle, r
+     }, [currentIndex]);
+     const handleEnd = React.useCallback((questions) => {
+         let newData = [];
++        var count=0;
+         for (let q of questions) {
++            if(q.answer===q.response){
++                count+=1
++            }
+             newData.push({
++               
+                 question: q.question,
+                 response: q.response,
+                 isRight: q.answer === q.response,
+                 answer: q.answer,
+             });
+         }
+-        onEnd(newData);
++        onEnd(count);
+     }, [questions]);
+     React.useEffect(() => {
+         Animated.spring(animation, {

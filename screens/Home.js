@@ -4,7 +4,7 @@ import { StyleSheet, Text, View,Image,TouchableOpacity ,SafeAreaView,FlatList} f
 import { color } from 'react-native-reanimated';
 import Achievements from './Achievements';
 //import Awards from './Awards';
-import Icon from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 

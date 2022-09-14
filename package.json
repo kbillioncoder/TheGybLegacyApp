@@ -6,7 +6,8 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "postinstall":"patch-package"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.11",
@@ -19,6 +20,7 @@
     "expo": "~46.0.9",
     "expo-av": "~12.0.4",
     "expo-status-bar": "~1.4.0",
+    "expo-updates": "~0.14.5",
     "i": "^0.3.7",
     "react": "18.0.0",
     "react-native": "0.69.5",

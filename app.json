@@ -4,10 +4,10 @@
     "slug": "TheGybLegacyApp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/gybmain.png",
+    "icon": "./assets/Icon1.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash1.png",
+      "image": "./assets/Icon1.png",
       "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
@@ -22,7 +22,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/Icon1.png",
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.bradbilli360.TheGybLegacyApp"
